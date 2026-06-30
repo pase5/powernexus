@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# POWERNEXUS | IEEE Technical Webinar Series
+
+A premium, professional, and fully responsive landing page for the **POWERNEXUS Online Webinar Series** organized by **IEEE PES SBC CEAL** (College of Engineering Attingal) in collaboration with the **IEEE PES Kerala Chapter**.
+
+This website is built entirely using **standalone HTML, CSS, and JavaScript** with no frameworks, Node.js dependencies, or build systems.
+
+## Project Structure
+
+- `website/index.html` - The main structure of the single-page application.
+- `website/style.css` - Custom design containing a dark green aesthetic, custom typography, animations, responsive layout breakpoints, and professional navigation sidebars.
+- `website/script.js` - Dynamic script containing the countdown timer (targeting July 10, 2026), customized eased smooth-scrolling, scroll-reveal activation, interactive chronology schedule timeline, registration ticket generation system, and FAQ accordions.
+- `website/public/` - Directory containing logos, background vectors, and image assets.
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To view the website:
+1. Double-click or open the [`website/index.html`](website/index.html) file directly in any modern web browser (Chrome, Edge, Firefox, Safari).
+2. Alternatively, serve it locally using a simple HTTP server extension (like VS Code Live Server).
