@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POWERNEXUS | IEEE PES Webinar Series</title>
+  <meta name="description" content="POWERNEXUS — IEEE PES SBC CEAL × Kerala Chapter's premier technical webinar series on Smart Grid, Power Systems, and Sustainable Energy." />
+  <meta name="theme-color" content="#22c55e" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Great+Vibes&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ======================================================
+  MOBILE MENU
+====================================================== -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="#about"    onclick="closeMobile()">About</a>
+  <a href="#sessions" onclick="closeMobile()">Sessions</a>
+  <a href="#speakers" onclick="closeMobile()">Speakers</a>
+  <a href="#schedule" onclick="closeMobile()">Schedule</a>
+  <a href="#register" onclick="closeMobile()">Register</a>
+  <a href="#faq"      onclick="closeMobile()">FAQ</a>
+  <a href="#contact"  onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ======================================================
+  NAVBAR
+====================================================== -->
+<nav id="navbar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <!-- Logo group -->
+    <a href="#" class="nav-logo">
+      <img src="./public/IEEELOGO.png" alt="IEEE" />
+      <div class="nav-logo-divider"></div>
+      <div class="nav-logo-text">
+        <img src="./public/POWERNEXUS.svg" alt="POWERNEXUS" class="nav-pn-logo" />
+        <span class="nav-logo-sub">IEEE PES Webinar Series</span>
+      </div>
+    </a>
+
+    <!-- Links -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#sessions">Sessions</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Right side -->
+    <div class="nav-right">
+      <a href="#register" class="nav-cta">Register Free</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-border"></div>
+</nav>
+
+<!-- ======================================================
+  HERO
+====================================================== -->
+<section class="hero" id="home">
+
+  <!-- Left social sidebar -->
+  <div class="hero-social-sidebar">
+    <span class="hero-social-label">Follow us</span>
+    <a href="#" aria-label="Instagram" class="hero-social-icon">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
+    <a href="#" aria-label="Twitter" class="hero-social-icon">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+    </a>
+  </div>
+
+  <!-- Right session nav sidebar -->
+  <div class="hero-session-sidebar">
+    <a href="#home"         class="hero-sess-item active">Start</a>
+    <a href="#about"        class="hero-sess-item">01</a>
+    <a href="#inauguration" class="hero-sess-item">02</a>
+    <a href="#sessions"     class="hero-sess-item">03</a>
+    <a href="#speakers"     class="hero-sess-item">04</a>
+    <a href="#schedule"     class="hero-sess-item">05</a>
+    <a href="#why-attend"   class="hero-sess-item">06</a>
+    <a href="#register"     class="hero-sess-item">07</a>
+    <a href="#faq"          class="hero-sess-item">08</a>
+    <a href="#contact"      class="hero-sess-item">09</a>
+  </div>
+
+  <!-- Centre content -->
+  <div class="hero-center">
+    <!-- Org names -->
+    <div class="hero-org reveal">
+      <p class="hero-org-main">IEEE PES SBC CEAL</p>
+      <p class="hero-org-collab">in collaboration with</p>
+      <p class="hero-org-main">IEEE PES KERALA CHAPTER</p>
+    </div>
+
+    <!-- Presents -->
+    <p class="hero-presents reveal stagger-1">Presents</p>
+
+    <!-- POWERNEXUS wordmark -->
+    <div class="hero-wordmark reveal stagger-2">
+      <img src="./public/POWERNEXUS.svg" alt="POWERNEXUS" class="hero-pn-logo" />
+    </div>
+
+    <!-- Divider line with subtitle -->
+    <div class="hero-subtitle-row reveal stagger-3">
+      <div class="hero-subtitle-line"></div>
+      <span class="hero-subtitle-text">Online Webinar Series</span>
+      <div class="hero-subtitle-line"></div>
+    </div>
+
+    <!-- Countdown -->
+    <div class="hero-countdown reveal stagger-4">
+      <p class="hero-countdown-label" id="cd-label">Next Session Begins In</p>
+      <div class="hero-cd-row">
+        <div class="hero-cd-unit">
+          <span class="hero-cd-num" id="cd-days">00</span>
+          <span class="hero-cd-lbl">Days</span>
+        </div>
+        <span class="hero-cd-sep">:</span>
+        <div class="hero-cd-unit">
+          <span class="hero-cd-num" id="cd-hours">00</span>
+          <span class="hero-cd-lbl">Hours</span>
+        </div>
+        <span class="hero-cd-sep">:</span>
+        <div class="hero-cd-unit">
+          <span class="hero-cd-num" id="cd-mins">00</span>
+          <span class="hero-cd-lbl">Minutes</span>
+        </div>
+        <span class="hero-cd-sep">:</span>
+        <div class="hero-cd-unit">
+          <span class="hero-cd-num" id="cd-secs">00</span>
+          <span class="hero-cd-lbl">Seconds</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTAs -->
+    <div class="hero-cta reveal stagger-5">
+      <a href="#register" class="btn-primary" id="hero-register-btn">
+        Register Free
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#sessions" class="btn-outline">View Sessions</a>
+    </div>
+  </div>
+
+  <!-- Bottom logo bar (pinned inside hero) -->
+  <div class="hero-logo-bar reveal stagger-5">
+    <div class="hero-logo-bar-inner">
+      <div class="hero-logo-item">
+        <img src="./public/LOGO SB CEAL LAW2 W.png" alt="SB CEAL" />
+        <span>IEEE Student Branch</span>
+      </div>
+      <div class="hero-logo-sep"></div>
+      <div class="hero-logo-item">
+        <img src="./public/PESKC Newlogo.png" alt="IEEE PES Kerala Chapter" />
+        <span>Kerala Chapter</span>
+      </div>
+      <div class="hero-logo-sep"></div>
+      <div class="hero-logo-item">
+        <img src="./public/IEEE-PES_Logo-color.png" alt="IEEE PES" />
+        <span>Power &amp; Energy Society</span>
+      </div>
+      <div class="hero-logo-sep"></div>
+      <div class="hero-logo-item">
+        <img src="./public/IEEELOGO.png" alt="IEEE" />
+        <span>IEEE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  ABOUT
+====================================================== -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <!-- Text -->
+      <div class="about-body">
+        <div class="section-header reveal">
+          <span class="section-label">About the Series</span>
+          <h2 class="section-title">Bridging Knowledge<br/>with Industry Practice</h2>
+        </div>
+        <div class="reveal stagger-1">
+          <p>
+            POWERNEXUS is a premier, multi-session online technical webinar series organized by the IEEE PES SBC CEAL in collaboration with the IEEE PES Kerala Chapter.
+          </p>
+          <p>
+            The initiative connects students, researchers, young professionals, and industry experts to explore emerging trends, structural optimizations, and real-world applications in modern power and energy systems. Through focused panels, we aim to bridge the gap between academic research and commercial technology implementations.
+          </p>
+        </div>
+
+        <div class="stats-row reveal stagger-2">
+          <div class="stat-item">
+            <div class="num">5</div>
+            <div class="lbl">Sessions</div>
+          </div>
+          <div class="stat-item">
+            <div class="num gold">6+</div>
+            <div class="lbl">Speakers</div>
+          </div>
+          <div class="stat-item">
+            <div class="num">Free</div>
+            <div class="lbl">Admission</div>
+          </div>
+          <div class="stat-item">
+            <div class="num">E-Cert</div>
+            <div class="lbl">Provided</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="about-image-wrap reveal from-right">
+        <img src="./public/solar_grid.png" alt="Solar Grid Power Infrastructure" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  INAUGURATION
+====================================================== -->
+<section class="section" id="inauguration" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-label">LAUNCH DAY - 10 JULY 2026</span>
+      <h2 class="section-title">Inauguration Ceremony</h2>
+      <p class="section-desc">Launch of the series by Region Representatives and IEEE PES Officers.</p>
+    </div>
+    <div class="inaug-grid">
+      <!-- Guests -->
+      <div>
+        <div class="guest-card reveal stagger-1">
+          <div class="guest-top">
+            <div>
+              <div class="guest-name">Prof. Canbing Li</div>
+              <div class="guest-org">Shanghai Jiao Tong University</div>
+            </div>
+            <div class="guest-role">Guest</div>
+          </div>
+          <div class="guest-desc">
+            IEEE PES Region 10 Representative. Noted researcher in smart grids.
+          </div>
+        </div>
+        <div class="guest-card reveal stagger-2">
+          <div class="guest-top">
+            <div>
+              <div class="guest-name">Dr. Boby Philip</div>
+              <div class="guest-org">Chair, IEEE PES Kerala Chapter</div>
+            </div>
+            <div class="guest-role">President</div>
+          </div>
+          <div class="guest-desc">
+            Directing sustainable energy and computational grids integration systems.
+          </div>
+        </div>
+      </div>
+
+      <!-- Program Timeline -->
+      <div>
+        <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;">Ceremony Timeline</p>
+        <div class="timeline">
+          <div class="tl-item reveal stagger-1">
+            <div class="tl-time">10:00 AM</div>
+            <div class="tl-title">Welcome Address</div>
+            <div class="tl-desc">SBC CEAL Officer</div>
+          </div>
+          <div class="tl-item reveal stagger-2">
+            <div class="tl-time">10:15 AM</div>
+            <div class="tl-title">Presidential Speech</div>
+            <div class="tl-desc">Dr. Boby Philip (Kerala Chapter Chair)</div>
+          </div>
+          <div class="tl-item reveal stagger-3">
+            <div class="tl-time">10:35 AM</div>
+            <div class="tl-title">Inaugural Speech</div>
+            <div class="tl-desc">Prof. Canbing Li (Region 10 Rep)</div>
+          </div>
+          <div class="tl-item reveal stagger-4">
+            <div class="tl-time">11:00 AM</div>
+            <div class="tl-title">Formal Decal Activation</div>
+            <div class="tl-desc">Live Ceremony Launch</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  SESSIONS
+====================================================== -->
+<section class="section" id="sessions">
+  <div class="section-inner">
+    <div class="sessions-layout">
+      <!-- Left info -->
+      <div>
+        <div class="section-header reveal">
+          <span class="section-label">Webinar Sessions</span>
+          <h2 class="section-title">Five Expert<br/>Webinar Sessions</h2>
+          <p class="section-desc">Each session is 90 minutes with live speaker interaction and a dedicated Q&amp;A segment.</p>
+        </div>
+
+        <div class="reveal stagger-1" style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:16px;">
+          <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">Format</p>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:rgba(255,255,255,0.65);">
+              <div style="width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;"></div>
+              Online via Google Meet / Zoom
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:rgba(255,255,255,0.65);">
+              <div style="width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;"></div>
+              90 Minutes per Session
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:rgba(255,255,255,0.65);">
+              <div style="width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;"></div>
+              E-Certificate on Completion
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:rgba(255,255,255,0.65);">
+              <div style="width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;"></div>
+              Free — Open to All Students
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal stagger-2" style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;">
+          <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Important</p>
+          <p style="font-size:0.8rem;color:rgba(255,255,255,0.55);line-height:1.6;">Register once to access all 5 sessions. Session links are sent to your registered email 24 hours before each session.</p>
+        </div>
+      </div>
+
+      <!-- Sessions grid -->
+      <div class="sessions-grid">
+        <div class="session-card reveal stagger-1">
+          <div class="session-num">Session 01</div>
+          <div class="session-title">Smart Grid Technologies &amp; Future Power Systems</div>
+          <div class="session-desc">Explore the architecture and enabling technologies of modern smart grids — from AMI and SCADA to IoT-enabled distribution.</div>
+          <div class="session-footer">
+            <div>
+              <div class="session-speaker-name">Dr. Jeevamma Jacob</div>
+              <div class="session-speaker-org">NIT Calicut</div>
+            </div>
+            <a href="#register" class="session-attend-btn">Attend →</a>
+          </div>
+        </div>
+
+        <div class="session-card reveal stagger-2">
+          <div class="session-num">Session 02</div>
+          <div class="session-title">Solar PV Integration &amp; Grid-Scale Energy Storage</div>
+          <div class="session-desc">Deep dive into solar PV system design, MPPT, inverter topologies, and battery energy storage for grid stabilisation.</div>
+          <div class="session-footer">
+            <div>
+              <div class="session-speaker-name">Dr. Benny Thomas</div>
+              <div class="session-speaker-org">CUSAT</div>
+            </div>
+            <a href="#register" class="session-attend-btn">Attend →</a>
+          </div>
+        </div>
+
+        <div class="session-card reveal stagger-3">
+          <div class="session-num">Session 03</div>
+          <div class="session-title">Power Electronics for Renewable Energy Systems</div>
+          <div class="session-desc">Fundamentals and advanced designs of DC-DC converters, inverters, and active power filters for renewable integration.</div>
+          <div class="session-footer">
+            <div>
+              <div class="session-speaker-name">Dr. Anu Lal</div>
+              <div class="session-speaker-org">NITC / Industry Expert</div>
+            </div>
+            <a href="#register" class="session-attend-btn">Attend →</a>
+          </div>
+        </div>
+
+        <div class="session-card reveal stagger-4">
+          <div class="session-num">Session 04</div>
+          <div class="session-title">Protection &amp; Automation in Modern Power Networks</div>
+          <div class="session-desc">Modern relay technologies, digital protection schemes, and intelligent substation automation for reliable grid operation.</div>
+          <div class="session-footer">
+            <div>
+              <div class="session-speaker-name">Er. Dileep Kumar M.S.</div>
+              <div class="session-speaker-org">KSEB Ltd.</div>
+            </div>
+            <a href="#register" class="session-attend-btn">Attend →</a>
+          </div>
+        </div>
+
+        <div class="session-card reveal stagger-5">
+          <div class="session-num">Session 05</div>
+          <div class="session-title">Wind Energy Systems &amp; Grid Compliance</div>
+          <div class="session-desc">Wind turbine aerodynamics, generator types, power curves, and grid code compliance for large-scale wind farms.</div>
+          <div class="session-footer">
+            <div>
+              <div class="session-speaker-name">Industry Expert</div>
+              <div class="session-speaker-org">TBA</div>
+            </div>
+            <a href="#register" class="session-attend-btn">Attend →</a>
+          </div>
+        </div>
+
+        <div class="session-card reveal stagger-6" style="border-style:dashed;opacity:0.55;pointer-events:none;">
+          <div class="session-num" style="color:var(--muted);background:transparent;border-color:rgba(255,255,255,0.1);">Bonus</div>
+          <div class="session-title" style="color:rgba(255,255,255,0.5);">Panel Discussion &amp; Closing Ceremony</div>
+          <div class="session-desc">An open panel with all speakers — career guidance, industry outlook, and certificate distribution.</div>
+          <div class="session-footer">
+            <div>
+              <div class="session-speaker-name" style="color:rgba(255,255,255,0.4);">All Speakers</div>
+            </div>
+            <span style="font-size:0.65rem;color:var(--muted);">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  SPEAKERS
+====================================================== -->
+<section class="section" id="speakers" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header centered reveal">
+      <span class="section-label">EXPERTS PANEL</span>
+      <h2 class="section-title">Featured Speakers &amp; Guests</h2>
+      <p class="section-desc">Learn from globally recognized IEEE officers and industry specialists representing premier global institutions.</p>
+    </div>
+
+    <div class="speakers-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="speaker-card reveal stagger-1">
+        <div class="speaker-avatar">CL</div>
+        <span class="speaker-badge">Expected Chief Guest</span>
+        <div class="speaker-name">Prof. Canbing Li</div>
+        <div class="speaker-title">IEEE PES Region 10 Representative</div>
+        <div class="speaker-org">Shanghai Jiao Tong University</div>
+        <hr class="speaker-divider" />
+        <div class="speaker-desc">Directing regional computational grids and membership activities across Region 10 (Asia &amp; Pacific).</div>
+        <hr class="speaker-divider" />
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Canbing%20Li" target="_blank" rel="noopener" class="speaker-link">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Profile
+        </a>
+      </div>
+
+      <div class="speaker-card reveal stagger-2">
+        <div class="speaker-avatar">SS</div>
+        <span class="speaker-badge">Technical Keynote</span>
+        <div class="speaker-name">Mr. Satish Saini</div>
+        <div class="speaker-title">Utilities Industry Specialist</div>
+        <div class="speaker-org">HEXstream (BSEE, SMIEEE, P.Eng.)</div>
+        <hr class="speaker-divider" />
+        <div class="speaker-desc">Specializing in real-time grid computations, protection configurations, SCADA systems, and asset index management.</div>
+        <hr class="speaker-divider" />
+        <a href="https://www.linkedin.com/in/satish-saini" target="_blank" rel="noopener" class="speaker-link">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Profile
+        </a>
+      </div>
+
+      <div class="speaker-card reveal stagger-3">
+        <div class="speaker-avatar">MC</div>
+        <span class="speaker-badge">Global IEEE Officer</span>
+        <div class="speaker-name">Dr. Mythili Chaganti</div>
+        <div class="speaker-title">IEEE PES Vice President</div>
+        <div class="speaker-org">Chapters &amp; Membership Association</div>
+        <hr class="speaker-divider" />
+        <div class="speaker-desc">Overseeing global chapters and academic programs, structuring key student initiatives and research networks.</div>
+        <hr class="speaker-divider" />
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Mythili%20Chaganti" target="_blank" rel="noopener" class="speaker-link">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  SCHEDULE
+====================================================== -->
+<section class="section" id="schedule">
+  <div class="section-inner">
+    <div class="schedule-layout">
+      <!-- Left: info block + detail card -->
+      <div>
+        <div class="section-header reveal">
+          <span class="section-label">CHRONOLOGY</span>
+          <h2 class="section-title">Event Schedule Timeline</h2>
+          <p class="section-desc">POWERNEXUS begins on 10 July 2026. Review our session milestones below. Click on any node in the timeline to view details.</p>
+        </div>
+
+        <div class="schedule-detail-card reveal stagger-1" id="scheduleDetail">
+          <p class="schedule-detail-label">Timeline Detail</p>
+          <p class="schedule-detail-title" id="sdTitle">Inauguration &amp; Launch Day</p>
+          <p class="schedule-detail-desc" id="sdDesc">Official commencement of the series. Connect with Regional IEEE Chairs and the Executive Committee at 10:00 AM.</p>
+        </div>
+
+        <div class="reveal stagger-2" style="margin-top:20px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;">
+          <div style="display:flex;gap:20px;flex-wrap:wrap;">
+            <div>
+              <p style="font-size:0.6rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Platform</p>
+              <p style="font-size:0.9rem;font-weight:700;color:#fff;margin-top:3px;">Google Meet</p>
+            </div>
+            <div>
+              <p style="font-size:0.6rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Time Zone</p>
+              <p style="font-size:0.9rem;font-weight:700;color:#fff;margin-top:3px;">IST (India Standard)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: timeline -->
+      <div class="schedule-timeline reveal from-right">
+        <div class="sched-item active" onclick="selectSession(this, 'Inauguration &amp; Launch Day', 'Official commencement of the series. Connect with Regional IEEE Chairs and the Executive Committee at 10:00 AM.')">
+          <div class="sched-dot"></div>
+          <div class="sched-time">10 July 2026 · 10:00 AM IST</div>
+          <div class="sched-title">Inauguration Ceremony</div>
+          <div class="sched-desc">Prof. Canbing Li, Dr. Boby Philip &amp; Officers</div>
+        </div>
+        <div class="sched-item" onclick="selectSession(this, 'Inauguration Ceremony', 'Join IEEE PES Kerala Chapter, CEAL officers, and global delegates for the inaugural ritual and series kickoff.')">
+          <div class="sched-dot"></div>
+          <div class="sched-time">10 July 2026 · 11:30 AM IST</div>
+          <div class="sched-title">Inaugural Launch Ritual</div>
+          <div class="sched-desc">Live Ceremony Activation</div>
+        </div>
+        <div class="sched-item" onclick="selectSession(this, 'Power System Operations &amp; Smart Grids', 'Webinar Session 1 led by Mr. Satish Saini (Utilities Specialist, HEXstream) analyzing real-time control metrics.')">
+          <div class="sched-dot"></div>
+          <div class="sched-time">10 July 2026 · 11:45 AM IST</div>
+          <div class="sched-title">Power System Operations &amp; Smart Grids</div>
+          <div class="sched-desc">Mr. Satish Saini · Utilities Specialist</div>
+        </div>
+        <div class="sched-item" onclick="selectSession(this, 'Remaining Webinar Sessions', 'Sessions 2 to 5 will proceed over the following weeks, covering Analysis, Dynamics, Planning, and Intelligent Systems.')">
+          <div class="sched-dot"></div>
+          <div class="sched-time">16 July 2026 Onwards</div>
+          <div class="sched-title">Remaining Webinar Sessions</div>
+          <div class="sched-desc">Sessions 2 to 5 · Subsequent Weeks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  WHY ATTEND
+====================================================== -->
+<section class="section" id="why-attend" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-inner">
+    <div class="why-layout">
+      <div>
+        <div class="section-header reveal">
+          <span class="section-label">Why POWERNEXUS</span>
+          <h2 class="section-title">What You'll<br/>Gain</h2>
+        </div>
+        <div class="reveal stagger-1">
+          <img src="./public/smart_substation.png" alt="Smart Substation" style="width:100%;border-radius:12px;border:1px solid var(--border);object-fit:cover;height:280px;" />
+        </div>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card reveal stagger-1">
+          <div class="benefit-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="benefit-title">Industry Relevance</div>
+          <div class="benefit-desc">Topics curated to match current industry demands in smart grid and renewable energy sectors.</div>
+        </div>
+        <div class="benefit-card reveal stagger-2">
+          <div class="benefit-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="benefit-title">Expert Instruction</div>
+          <div class="benefit-desc">Learn directly from professors from NIT Calicut, CUSAT, and KSEB senior engineers.</div>
+        </div>
+        <div class="benefit-card reveal stagger-3">
+          <div class="benefit-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="benefit-title">Live Interaction</div>
+          <div class="benefit-desc">Real-time Q&amp;A, polls, and discussions. Get your specific questions answered directly.</div>
+        </div>
+        <div class="benefit-card reveal stagger-4">
+          <div class="benefit-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="benefit-title">E-Certificate</div>
+          <div class="benefit-desc">IEEE-recognised e-certificate issued on completion, verifiable and shareable on LinkedIn.</div>
+        </div>
+        <div class="benefit-card reveal stagger-5">
+          <div class="benefit-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="benefit-title">Flexible Timing</div>
+          <div class="benefit-desc">Saturday evening sessions designed to fit student and professional schedules easily.</div>
+        </div>
+        <div class="benefit-card reveal stagger-6">
+          <div class="benefit-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div class="benefit-title">Community Access</div>
+          <div class="benefit-desc">Join the POWERNEXUS community — connect with peers and industry professionals in the IEEE network.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  REGISTRATION
+====================================================== -->
+<section class="section" id="register">
+  <div class="section-inner">
+    <div class="reg-layout">
+      <!-- Info side -->
+      <div>
+        <div class="section-header reveal">
+          <span class="section-label">Registration</span>
+          <h2 class="section-title">Secure Your<br/>Spot Today</h2>
+          <p class="section-desc">Registration is completely free. Open to students and working professionals worldwide.</p>
+        </div>
+        <div class="reg-info-list reveal stagger-1">
+          <div class="reg-info-item">
+            <div class="reg-dot green"></div>
+            Single registration covers all 5 sessions
+          </div>
+          <div class="reg-info-item">
+            <div class="reg-dot green"></div>
+            Session links sent 24 hours before each event
+          </div>
+          <div class="reg-info-item">
+            <div class="reg-dot green"></div>
+            E-certificate emailed after each session
+          </div>
+          <div class="reg-info-item">
+            <div class="reg-dot gold"></div>
+            IEEE members get priority seating
+          </div>
+          <div class="reg-info-item">
+            <div class="reg-dot gold"></div>
+            Open to global participants
+          </div>
+        </div>
+      </div>
+
+      <!-- Form / Ticket side -->
+      <div>
+        <!-- Form -->
+        <div class="form-card reveal stagger-1" id="regForm">
+          <h4>Registration Form</h4>
+          <form onsubmit="submitForm(event)" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fname">First Name <span class="req">*</span></label>
+                <input class="form-input" type="text" id="fname" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lname">Last Name <span class="req">*</span></label>
+                <input class="form-input" type="text" id="lname" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address <span class="req">*</span></label>
+              <input class="form-input" type="email" id="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input class="form-input" type="tel" id="phone" placeholder="+91 98765 43210" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="role">Participant Type <span class="req">*</span></label>
+                <select class="form-select" id="role" required>
+                  <option value="" disabled selected>Select...</option>
+                  <option>Undergraduate Student</option>
+                  <option>Postgraduate Student</option>
+                  <option>Research Scholar / PhD</option>
+                  <option>Faculty / Academic</option>
+                  <option>Working Professional</option>
+                  <option>IEEE Member</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="institution">Institution / Organisation</label>
+              <input class="form-input" type="text" id="institution" placeholder="Your college or company" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="linkedin">LinkedIn Profile (optional)</label>
+              <input class="form-input" type="url" id="linkedin" placeholder="https://linkedin.com/in/yourname" />
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12l5 5 9-10"/></svg>
+              Complete Registration
+            </button>
+          </form>
+        </div>
+
+        <!-- Ticket (shown after submit) -->
+        <div class="ticket-wrap" id="ticketCard" style="display:none;">
+          <div class="ticket-header">
+            <div>
+              <div class="ticket-event-label">IEEE PES Webinar Series</div>
+              <div class="ticket-event-name">POWERNEXUS</div>
+              <div class="ticket-series">5-Session Programme · July–Sept 2025</div>
+            </div>
+            <div class="ticket-verify">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12l5 5 9-10"/></svg>
+              Verified
+            </div>
+          </div>
+          <div class="ticket-body">
+            <div>
+              <div class="ticket-field-label">Name</div>
+              <div class="ticket-field-value" id="tk-name">—</div>
+            </div>
+            <div>
+              <div class="ticket-field-label">Ticket ID</div>
+              <div class="ticket-field-value green" id="tk-id">—</div>
+            </div>
+            <div>
+              <div class="ticket-field-label">Email</div>
+              <div class="ticket-field-value" id="tk-email">—</div>
+            </div>
+            <div>
+              <div class="ticket-field-label">Type</div>
+              <div class="ticket-field-value" id="tk-role">—</div>
+            </div>
+            <div class="ticket-full">
+              <div class="ticket-field-label">Sessions Enrolled</div>
+              <div class="ticket-field-value green">All 5 Sessions · Smart Grid · Solar · Power Electronics · Protection · Wind</div>
+            </div>
+          </div>
+          <div class="ticket-stub">
+            <svg class="barcode-svg" width="160" height="36" viewBox="0 0 160 36">
+              <rect x="0"   y="0" width="3"  height="36" fill="#fff"/>
+              <rect x="6"   y="0" width="1"  height="36" fill="#fff"/>
+              <rect x="10"  y="0" width="4"  height="36" fill="#fff"/>
+              <rect x="17"  y="0" width="2"  height="36" fill="#fff"/>
+              <rect x="22"  y="0" width="3"  height="36" fill="#fff"/>
+              <rect x="28"  y="0" width="1"  height="36" fill="#fff"/>
+              <rect x="32"  y="0" width="5"  height="36" fill="#fff"/>
+              <rect x="40"  y="0" width="2"  height="36" fill="#fff"/>
+              <rect x="45"  y="0" width="4"  height="36" fill="#fff"/>
+              <rect x="52"  y="0" width="1"  height="36" fill="#fff"/>
+              <rect x="56"  y="0" width="3"  height="36" fill="#fff"/>
+              <rect x="62"  y="0" width="2"  height="36" fill="#fff"/>
+              <rect x="67"  y="0" width="5"  height="36" fill="#fff"/>
+              <rect x="75"  y="0" width="1"  height="36" fill="#fff"/>
+              <rect x="79"  y="0" width="4"  height="36" fill="#fff"/>
+              <rect x="86"  y="0" width="2"  height="36" fill="#fff"/>
+              <rect x="91"  y="0" width="3"  height="36" fill="#fff"/>
+              <rect x="97"  y="0" width="1"  height="36" fill="#fff"/>
+              <rect x="101" y="0" width="4"  height="36" fill="#fff"/>
+              <rect x="108" y="0" width="2"  height="36" fill="#fff"/>
+              <rect x="113" y="0" width="5"  height="36" fill="#fff"/>
+              <rect x="121" y="0" width="2"  height="36" fill="#fff"/>
+              <rect x="126" y="0" width="3"  height="36" fill="#fff"/>
+              <rect x="132" y="0" width="1"  height="36" fill="#fff"/>
+              <rect x="136" y="0" width="4"  height="36" fill="#fff"/>
+              <rect x="143" y="0" width="2"  height="36" fill="#fff"/>
+              <rect x="148" y="0" width="3"  height="36" fill="#fff"/>
+              <rect x="154" y="0" width="5"  height="36" fill="#fff"/>
+            </svg>
+            <div class="ticket-actions">
+              <button class="ticket-btn green-btn" onclick="printTicket()">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                Save
+              </button>
+              <button class="ticket-btn" onclick="copyTicketId()">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                Copy ID
+              </button>
+            </div>
+          </div>
+          <p class="ticket-confirm-note">
+            A confirmation email will be sent to <strong id="tk-email-note">—</strong><br/>
+            with your session links. Check spam if not received within 15 minutes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  FAQ
+====================================================== -->
+<section class="section" id="faq" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header centered reveal">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Is the webinar series completely free?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Yes, POWERNEXUS is entirely free of charge. There are no registration fees, no hidden costs, and no premium tiers. Simply register and attend all sessions at no cost.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Do I need to register for each session separately?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>No. A single registration gives you access to all five sessions. Once registered, you will receive session links via email before each event. You do not need to re-register for individual sessions.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Will I receive a certificate for attending?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Yes. An IEEE-branded e-certificate is issued for each session you attend. You need to be present for a minimum of 80% of the session duration to be eligible. Certificates can be shared on LinkedIn and other platforms.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          What platform will the sessions be conducted on?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Sessions will be conducted via Google Meet (primary) or Zoom. The joining link for each session will be sent to your registered email 24 hours before the event starts.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Who can attend POWERNEXUS?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>POWERNEXUS is open to everyone — undergraduate and postgraduate students, research scholars, faculty members, and industry professionals. IEEE membership is not required, though IEEE members are given priority in case of seat limitations.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Can I attend if I miss a session?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Recorded sessions may be made available to registered participants after the live event, subject to speaker consent. However, certificates are only issued for live attendance. Stay tuned to official communications for recording availability.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          How do I contact the organising team?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Reach out via the contact details in the Contact section below, or email the IEEE PES SBC CEAL office directly. The team typically responds within 24 hours on working days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  CONTACT
+====================================================== -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <div class="section-header reveal">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">Reach out for any queries about the webinar series, registration, or certificates.</p>
+        </div>
+
+        <div class="contact-items">
+          <div class="contact-item reveal stagger-1">
+            <div class="contact-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">
+                <a href="mailto:pes.ceal@ieee.org">pes.ceal@ieee.org</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item reveal stagger-2">
+            <div class="contact-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.09 1.2 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l.72-.72a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">
+                <a href="tel:+919846512026">+91 984 651 2026</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item reveal stagger-3">
+            <div class="contact-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">College of Engineering Attingal, Thiruvananthapuram, Kerala, India</div>
+            </div>
+          </div>
+
+          <div class="contact-item reveal stagger-4">
+            <div class="contact-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Office Hours</div>
+              <div class="contact-value">Mon – Fri · 9:00 AM – 5:00 PM IST</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://www.ieee.org/pes" target="_blank" rel="noopener" class="contact-ext-link reveal stagger-5">
+          Visit IEEE PES Website
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <!-- Map -->
+      <div class="map-card reveal from-right" style="padding: 0; min-height: 320px;">
+        <iframe src="https://maps.google.com/maps?q=College%20of%20Engineering%20Attingal&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; filter: grayscale(1) invert(0.92) contrast(1.15) hue-rotate(90deg);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+  FOOTER
+====================================================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <div class="footer-brand-icon">P</div>
+        <span class="footer-brand-name">POWERNEXUS</span>
+      </div>
+      <div class="footer-copy">
+        © 2025 IEEE PES SBC CEAL &amp; IEEE PES Kerala Chapter · All rights reserved
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;">
+        <a href="#about"    style="font-size:0.72rem;color:rgba(255,255,255,0.4);transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">About</a>
+        <a href="#sessions" style="font-size:0.72rem;color:rgba(255,255,255,0.4);transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Sessions</a>
+        <a href="#speakers" style="font-size:0.72rem;color:rgba(255,255,255,0.4);transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Speakers</a>
+        <a href="#register" style="font-size:0.72rem;color:rgba(255,255,255,0.4);transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Register</a>
+        <a href="#faq"      style="font-size:0.72rem;color:rgba(255,255,255,0.4);transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">FAQ</a>
+        <a href="#contact"  style="font-size:0.72rem;color:rgba(255,255,255,0.4);transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Contact</a>
+      </div>
+      <span style="font-size:0.65rem;color:rgba(255,255,255,0.2);margin-top:4px;">Free · Online · Open to All</span>
+    </div>
+
+    <div class="footer-links">
+      <!-- LinkedIn -->
+      <a href="#" class="footer-icon-link" aria-label="LinkedIn" title="LinkedIn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <!-- Instagram -->
+      <a href="#" class="footer-icon-link" aria-label="Instagram" title="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <!-- Mail -->
+      <a href="mailto:ieeepesceal@gmail.com" class="footer-icon-link" aria-label="Email" title="Email">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================================
+  SCRIPT
+====================================================== -->
+<script src="script.js"></script>
+</body>
+</html>
