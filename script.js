@@ -30,6 +30,11 @@ hamburger.addEventListener('click', () => {
 });
 mobileClose.addEventListener('click', closeMobile);
 
+// Close mobile menu when clicking any link inside it
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', closeMobile);
+});
+
 function closeMobile() {
   mobileMenu.classList.remove('open');
   document.body.style.overflow = '';
