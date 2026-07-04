@@ -186,8 +186,8 @@ button { font-family: inherit; cursor: pointer; }
 }
 .nav-cta {
   padding: 8px 18px;
-  background: var(--green);
-  color: #050e07;
+  background: white;
+  color: var(--green);
   font-weight: 700;
   font-size: 0.75rem;
   letter-spacing: 0.06em;
@@ -199,7 +199,7 @@ button { font-family: inherit; cursor: pointer; }
   text-decoration: none;
   display: inline-block;
 }
-.nav-cta:hover { background: var(--green-dark); transform: translateY(-1px); }
+.nav-cta:hover { transform: translateY(-1px); }
 
 /* Hamburger */
 .hamburger {
